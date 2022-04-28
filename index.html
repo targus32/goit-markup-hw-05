@@ -56,7 +56,9 @@
       <section class="hero section">
         <div class="container">
           <h1>Эффективные решения для вашего бизнеса</h1>
-          <button type="button" class="button">Заказать услугу</button>
+          <button type="button " class="button" data-modal-open>
+            Заказать услугу
+          </button>
         </div>
       </section>
       <!-- Секция преимущества студии -->
@@ -408,5 +410,18 @@
         </div>
       </div>
     </footer>
+    <!-- Модальное окно -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-button" data-modal-close>
+          <svg class="modal-close" width="18" height="18">
+            <use
+              href="./image/close-modal-window.svg#icon-close-black-18dp"
+            ></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./modal.js"></script>
   </body>
 </html>
